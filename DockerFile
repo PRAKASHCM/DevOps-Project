@@ -1,5 +1,4 @@
 From php:7.4-apache
 ADD website /var/www/html
-RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 80
-CMD ["appache-foreground"]
+CMD apachectl -D FOREGROUND
